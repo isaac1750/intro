@@ -87,7 +87,7 @@ PWA_APP_DIR = 'ltr'
 PWA_APP_LANG = 'en-US'
 
 
-STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'static'), ]
+
 
 
 PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'pages', 'static/js/serviceworker.js')
