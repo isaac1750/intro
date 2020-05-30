@@ -25,7 +25,7 @@ SECRET_KEY = '%9c%9+%yc4$o=(%*9=nh!1a!=2z!x(kb76a-wx6saf634v_v3r'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['134.122.120.141']
+ALLOWED_HOSTS = ['134.122.60.205']
 
 
 # Application definition
@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'pages',
+    'pwa',
 ]
 
 MIDDLEWARE = [
@@ -71,6 +72,25 @@ TEMPLATES = [
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
 
+PWA_APP_NAME = 'MY APP'
+PWA_APP_DESCRIPTION = "My app description"
+PWA_APP_THEME_COLOR = '#0A0302' 
+PWA_APP_BACKGROUND_COLOR = '#ffffff'
+PWA_APP_DISPLAY = 'standalone'
+PWA_APP_SCOPE = '/'
+PWA_APP_ORIENTATION = 'any' 
+PWA_APP_START_URL = '/' 
+PWA_APP_ICONS = [ { 'src': '/static/images/my_app_icon.png', 'sizes': '160x160' } ] 
+PWA_APP_ICONS_APPLE = [ { 'src': '/static/images/my_app_icon.png', 'sizes': '160x160' } ] 
+PWA_APP_SPLASH_SCREEN = [ { 'src': '/static/images/icons/splash-1242x2688.png', 'media': '(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)' } ] 
+PWA_APP_DIR = 'ltr' 
+PWA_APP_LANG = 'en-US'
+
+
+STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'static'), ]
+
+
+PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'pages', 'static/js/serviceworker.js')
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
