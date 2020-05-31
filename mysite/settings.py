@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '%9c%9+%yc4$o=(%*9=nh!1a!=2z!x(kb76a-wx6saf634v_v3r'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['134.122.120.141']
 
@@ -90,7 +90,7 @@ WSGI_APPLICATION = 'mysite.wsgi.application'
 
 
 
-PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'pages', 'static/js/serviceworker.js')
+# PWA_SERVICE_WORKER_PATH = os.path.join(BASE_DIR, 'pages', 'static/js/serviceworker.js')
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
