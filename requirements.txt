@@ -1,4 +1,4 @@
-Django==2.2.12
+Django==2.2.13
 django-pwa==1.0.8
 gunicorn==20.0.4
 Pillow==7.1.2
